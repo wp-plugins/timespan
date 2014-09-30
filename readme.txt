@@ -12,6 +12,8 @@ TimeSpan is a simple, easy to set-up WordPress plugin that automagically calcula
 
 == Description ==
 
+Welcome to TimeSpan
+
 The plugin ships with default settings, but allows you to change everything from: the message shown for a post that will take less than one minute; the message shown for any post over 1 minute; and the words-per-minute used to calculate the reading time.
 
 **Setup**
