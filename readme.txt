@@ -1,6 +1,6 @@
 === TimeSpan ===
 Contributors: paperleaf
-Tags: Reading, Blog, Time, Length, Post, PaperLeaf, Paper, Leaf
+Tags: Reading, Blog, Time, Length, Post, PaperLeaf, Paper, Leaf, Paper Leaf, Time Span, Span
 Requires at least: 3.0.1
 Tested up to: 4.1
 Stable tag: trunk
