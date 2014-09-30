@@ -42,7 +42,7 @@ That's it!
 
 **Are you guys for hire?**
 
-We sure are. We're a custom design & WordPress development shop. If WordPress can do it, we can do it. <a href="http://www.paper-leaf.com">Drop us a line!</a>
+We sure are. We're a custom design & WordPress development shop. If WordPress can do it, we can do it. <a href="http://www.paper-leaf.com" target=“_blank”>Drop us a line!</a>
 
 == Installation ==
 
@@ -67,7 +67,7 @@ Yep. Just target the .timespan class to target the type, and the .ts-time class 
 
 = Are you guys for hire? =
 
-We sure are. We're a custom design & WordPress development shop. If WordPress can do it, we can do it. <a href="http://www.paper-leaf.com">Drop us a line!</a>
+We sure are. We're a custom design & WordPress development shop. If WordPress can do it, we can do it. <a href="http://www.paper-leaf.com" target=“_blank”>Drop us a line!</a>
 
 == Changelog ==
 
