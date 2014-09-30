@@ -9,13 +9,16 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 TimeSpan is a simple, easy to set-up WordPress plugin that automagically calculates the approximate length of time it will take to read a blog post.
 
+
+== Description ==
+
 The plugin ships with default settings, but allows you to change everything from: the message shown for a post that will take less than one minute; the message shown for any post over 1 minute; and the words-per-minute used to calculate the reading time.
 
-= Setup =
+*Setup*
 
 Once the plugin is activated, you have two options: you can include it in your theme files (handy for WordPress developers), or you can let us do all the heavy lifting with automagic setup.
 
-= Include TimeSpan in Your Theme Files =
+*Include TimeSpan in Your Theme Files*
 
 1. Head over to the TimeSpan menu under Settings
 2. Fill out the options on that page
@@ -24,7 +27,7 @@ Once the plugin is activated, you have two options: you can include it in your t
 
 That's it!
 
-= Automagic Setup =
+*Automagic Setup*
 
 The Automagic Setup will automatically insert the calculated time to read at the top of each of your posts. Here's how to do that:
 
@@ -34,10 +37,6 @@ The Automagic Setup will automatically insert the calculated time to read at the
 4. Click the blue "Save Changes" button.
 
 That's it!
-
-== Description ==
-
-The plugin ships with default settings, but allows you to change everything from: the message shown for a post that will take less than one minute; the message shown for any post over 1 minute; and the words-per-minute used to calculate the reading time.
 
 == Installation ==
 
