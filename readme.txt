@@ -1,5 +1,5 @@
 === TimeSpan ===
-Contributors: PaperLeaf
+Contributors: paperleaf
 Tags: Reading, Blog, Time, Length, Post
 Requires at least: 3.0.1
 Tested up to: 4.1
