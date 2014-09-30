@@ -14,11 +14,11 @@ TimeSpan is a simple, easy to set-up WordPress plugin that automagically calcula
 
 The plugin ships with default settings, but allows you to change everything from: the message shown for a post that will take less than one minute; the message shown for any post over 1 minute; and the words-per-minute used to calculate the reading time.
 
-*Setup*
+**Setup**
 
 Once the plugin is activated, you have two options: you can include it in your theme files (handy for WordPress developers), or you can let us do all the heavy lifting with automagic setup.
 
-*Include TimeSpan in Your Theme Files*
+**Include TimeSpan in Your Theme Files**
 
 1. Head over to the TimeSpan menu under Settings
 2. Fill out the options on that page
@@ -27,7 +27,7 @@ Once the plugin is activated, you have two options: you can include it in your t
 
 That's it!
 
-*Automagic Setup*
+**Automagic Setup**
 
 The Automagic Setup will automatically insert the calculated time to read at the top of each of your posts. Here's how to do that:
 
@@ -37,6 +37,10 @@ The Automagic Setup will automatically insert the calculated time to read at the
 4. Click the blue "Save Changes" button.
 
 That's it!
+
+**Are you guys for hire?**
+
+We sure are. We're a custom design & WordPress development shop. If WordPress can do it, we can do it. <a href="http://www.paper-leaf.com">Drop us a line!</a>
 
 == Installation ==
 
