@@ -11,6 +11,30 @@ TimeSpan is a simple, easy to set-up WordPress plugin that automagically calcula
 
 The plugin ships with default settings, but allows you to change everything from: the message shown for a post that will take less than one minute; the message shown for any post over 1 minute; and the words-per-minute used to calculate the reading time.
 
+= Setup =
+
+Once the plugin is activated, you have two options: you can include it in your theme files (handy for WordPress developers), or you can let us do all the heavy lifting with automagic setup.
+
+= Include TimeSpan in Your Theme Files =
+
+1. Head over to the TimeSpan menu under Settings
+2. Fill out the options on that page
+3. Place the shortcode [time-span] wherever you'd like the data to show up in your theme file (e.g. page-home.php).
+4. Click the blue "Save Changes" button.
+
+That's it!
+
+= Automagic Setup =
+
+The Automagic Setup will automatically insert the calculated time to read at the top of each of your posts. Here's how to do that:
+
+1. Head over to the TimeSpan menu under Settings
+2. Fill out the options on that page
+3. Check the box at the bottom labeled "Automatically insert the time to read at the top of Posts".
+4. Click the blue "Save Changes" button.
+
+That's it!
+
 == Description ==
 
 The plugin ships with default settings, but allows you to change everything from: the message shown for a post that will take less than one minute; the message shown for any post over 1 minute; and the words-per-minute used to calculate the reading time.
@@ -21,29 +45,6 @@ The plugin ships with default settings, but allows you to change everything from
 2. Activate the TimeSpan plugin through the 'Plugins' menu in WordPress
 3. Configure the plugin by going to the TimeSpan menu that appears in your admin menu (under Settings).
 
-== Setup ==
-
-Once the plugin is activated, you have two options: you can include it in your theme files (handy for WordPress developers), or you can let us do all the heavy lifting with automagic setup.
-
-== Include TimeSpan in Your Theme Files == 
-
-1. Head over to the TimeSpan menu under Settings
-2. Fill out the options on that page
-3. Place the shortcode [time-span] wherever you'd like the data to show up in your theme file (e.g. page-home.php).
-4. Click the blue "Save Changes" button.
-
-That's it!
-
-== Automagic Setup == 
-
-The Automagic Setup will automatically insert the calculated time to read at the top of each of your posts. Here's how to do that:
-
-1. Head over to the TimeSpan menu under Settings
-2. Fill out the options on that page
-3. Check the box at the bottom labeled "Automatically insert the time to read at the top of Posts".
-4. Click the blue "Save Changes" button.
-
-That's it!
 
 == Frequently Asked Questions ==
 
