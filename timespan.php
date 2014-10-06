@@ -3,7 +3,7 @@
 Plugin Name: TimeSpan
 Plugin URI: http://paper-leaf.com
 Description: A simple, easy to use plugin which can be used to display the average time it will take to read a post.
-Version: 1.0
+Version: 1.0.1
 Author: Paper Leaf Design
 Author URI: http://paper-leaf.com
 License: GPLv2 or Later
@@ -37,7 +37,6 @@ function ttr_options() {
 }
 
 
-add_shortcode('time-span', 'time_to_read');
 
 function time_to_read() {
     $content = get_post_field( 'post_content', $post->ID );
@@ -56,26 +55,26 @@ function time_to_read() {
             $full .= 'less than one minute.';
         }
         $full .= '</p></span>';
-        // $full .= strval($time_in_minutes);
         return $full;
     } else {
         $time_in_minutes = round($time_in_minutes); // round the time to a full number
         $strTime = strval($time_in_minutes); // convert time to a string
-        $content = '<span class="timespan greater-than"><p>';
+        $full = '<span class="timespan greater-than"><p>';
         if (get_option('gt1') != '') {
             $full .= get_option('gt1'); // get the option from WP backend
         } else {
             $full .= 'greater than';
         }
-        $content .= '<span class="ts-time"> ' . $strTime . '</span> '; // add time onto the end of the content
+        $full .= '<span class="ts-time"> ' . $strTime . '</span> '; // add time onto the end of the content
         if (get_option('gt1po') != '') {
             $full .= get_option('gt1po'); // get the option from WP backend
         } else {
             $full .= 'minutes';
         }
-        return $content; // return rounded time
+        return $full; // return rounded time
     }
 }
+add_shortcode('time-span', 'time_to_read');
 
 function auto_TTR( $content ) {
     if (get_option('autots') == 1) {    
