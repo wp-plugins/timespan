@@ -24,7 +24,7 @@ Once the plugin is activated, you have two options: you can include it in your t
 
 1. Head over to the TimeSpan menu under Settings
 2. Fill out the options on that page
-3. Place the shortcode [time-span] wherever you'd like the data to show up in your theme file (e.g. page-home.php).
+3. Place the ‘<?php echo do_shortcode(‘[time-span]’); ?>’ shortcode wherever you'd like the data to show up in your theme file (e.g. page-home.php).
 4. Click the blue "Save Changes" button.
 
 That's it!
