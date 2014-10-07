@@ -3,7 +3,7 @@
 Plugin Name: TimeSpan
 Plugin URI: http://paper-leaf.com
 Description: A simple, easy to use plugin which can be used to display the average time it will take to read a post.
-Version: 1.0.3
+Version: 1.0.4
 Author: Paper Leaf Design
 Author URI: http://paper-leaf.com
 License: GPLv2 or Later
@@ -68,6 +68,7 @@ function time_to_read() {
         $full .= '<span class="ts-time"> ' . $strTime . '</span> '; // add time onto the end of the content
         if (get_option('gt1po') != '') {
             $full .= get_option('gt1po'); // get the option from WP backend
+            $full .= '</p></span>';
         } else {
             $full .= 'minutes </p></span>';
         }
@@ -108,6 +109,7 @@ function auto_TTR( $content ) {
                 $full .= '<span class="ts-time"> ' . $strTime . '</span> '; // add time onto the end of the content
                 if (get_option('gt1po') != '') {
                     $full .= get_option('gt1po'); // get the option from WP backend
+                    $full .= '</p></span>';
                 } else {
                     $full .= 'minutes</p></span>';
                 }
