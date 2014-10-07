@@ -69,7 +69,7 @@ function time_to_read() {
         if (get_option('gt1po') != '') {
             $full .= get_option('gt1po'); // get the option from WP backend
         } else {
-            $full .= 'minutes';
+            $full .= 'minutes </p></span>';
         }
         return $full; // return rounded time
     }
@@ -109,7 +109,7 @@ function auto_TTR( $content ) {
                 if (get_option('gt1po') != '') {
                     $full .= get_option('gt1po'); // get the option from WP backend
                 } else {
-                    $full .= 'minutes';
+                    $full .= 'minutes</p></span>';
                 }
                 return $full . $content; // return rounded time
             }
