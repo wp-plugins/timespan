@@ -3,7 +3,7 @@
 Plugin Name: TimeSpan
 Plugin URI: http://paper-leaf.com
 Description: A simple, easy to use plugin which can be used to display the average time it will take to read a post.
-Version: 1.0.2
+Version: 1.0.3
 Author: Paper Leaf Design
 Author URI: http://paper-leaf.com
 License: GPLv2 or Later
