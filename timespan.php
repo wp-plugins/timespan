@@ -3,7 +3,7 @@
 Plugin Name: TimeSpan
 Plugin URI: http://paper-leaf.com
 Description: A simple, easy to use plugin which can be used to display the average time it will take to read a post.
-Version: 1.0.5
+Version: 1.0.6
 Author: Paper Leaf Design
 Author URI: http://paper-leaf.com
 License: GPLv2 or Later
@@ -40,8 +40,8 @@ function ttr_options() {
 
 function time_to_read() {
     if ( is_single() && is_main_query() ) {
-        $content = get_post_field( 'post_content', $post->ID );
-        $word_count = str_word_count( strip_tags( $content ) );
+        $temp = get_the_content();
+        $word_count = str_word_count( strip_tags( $temp ) );
         $words_per_minute = 250;
         if (get_option('wpm') != '') {
             $words_per_minute = get_option('wpm');
@@ -80,8 +80,8 @@ function time_to_read() {
 add_shortcode('time-span', 'time_to_read');
 
 function auto_TTR( $content ) {
-    if ( is_single() && is_main_query() ) {
-        if (get_option('autots') == 1) {    
+    if (get_option('autots') == 1) {    
+        if ( is_single() && is_main_query() ) {
             $word_count = str_word_count( strip_tags( $content ) );
             $words_per_minute = 250;
             if (get_option('wpm') != '') {
