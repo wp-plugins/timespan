@@ -82,7 +82,8 @@ add_shortcode('time-span', 'time_to_read');
 function auto_TTR( $content ) {
     if (get_option('autots') == 1) {    
         if ( is_single() && is_main_query() ) {
-            $word_count = str_word_count( strip_tags( $content ) );
+            $temp = $content;
+            $word_count = str_word_count( strip_tags( $temp ) );
             $words_per_minute = 250;
             if (get_option('wpm') != '') {
                 $words_per_minute = get_option('wpm');
