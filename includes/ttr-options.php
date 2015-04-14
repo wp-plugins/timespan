@@ -69,6 +69,18 @@
             </tr>
 
             <tr valign="top">
+            
+                <th scope="row">Greater Than 1 Minute Less Than 2 Minutes Postfix</th>
+                <th scrop="row">
+                    <p style="margin-top:-5px;">If the post takes more than one minute to read, but less than two minutes, this field will be displayed after the number of minutes.</p>
+                    <p><em>eg. 'greater than</span> 1 <span style="text-decoration: underline;">minute, compadre!</em>'</p>
+                </th>
+            
+                <td style="vertical-align:top;"><input type="text" name="gt1lt2po" value="<?php echo get_option('gt1lt2po'); ?>" /></td>
+            
+            </tr>
+
+            <tr valign="top">
 
                 <th scope="row">Greater Than 1 Minute Postfix</th>
                 <th scrop="row">

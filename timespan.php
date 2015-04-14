@@ -3,7 +3,7 @@
 Plugin Name: TimeSpan
 Plugin URI: http://paper-leaf.com
 Description: A simple, easy to use plugin which can be used to display the average time it will take to read a post.
-Version: 1.0.7
+Version: 1.1.0
 Author: Paper Leaf Design
 Author URI: http://paper-leaf.com
 License: GPLv2 or Later
@@ -58,8 +58,8 @@ function time_to_read() {
             $full .= '</p></span>';
             return $full;
         } else {
-            $time_in_minutes = round($time_in_minutes); // round the time to a full number
-            $strTime = strval($time_in_minutes); // convert time to a string
+            $time_in_minutes_r = round($time_in_minutes); // round the time to a full number
+            $strTime = strval($time_in_minutes_r); // convert time to a string            
             $full = '<span class="timespan greater-than"><p>';
             if (get_option('gt1') != '') {
                 $full .= get_option('gt1'); // get the option from WP backend
@@ -67,11 +67,20 @@ function time_to_read() {
                 $full .= 'greater than';
             }
             $full .= '<span class="ts-time"> ' . $strTime . '</span> '; // add time onto the end of the content
-            if (get_option('gt1po') != '') {
-                $full .= get_option('gt1po'); // get the option from WP backend
-                $full .= '</p></span>';
+            if (($time_in_minutes > 1) && ($time_in_minutes < 2) ) {
+                if (get_option('gt1lt2po') != '') {
+                    $full .= get_option('gt1lt2po'); // get the option from WP backend
+                    $full .= '</p></span>';
+                } else {                    
+                    $full .= 'minute </p></span>';
+                }
             } else {
-                $full .= 'minutes </p></span>';
+                if (get_option('gt1po') != '') {
+                    $full .= get_option('gt1po'); // get the option from WP backend
+                    $full .= '</p></span>';
+                } else {                    
+                    $full .= 'minutes </p></span>';
+                }
             }
             return $full; // return rounded time
         }
@@ -101,8 +110,8 @@ function auto_TTR( $content ) {
                 // $full .= strval($time_in_minutes);
                 return $full . $content;
             } else {
-                $time_in_minutes = round($time_in_minutes); // round the time to a full number
-                $strTime = strval($time_in_minutes); // convert time to a string
+                $time_in_minutes_r = round($time_in_minutes); // round the time to a full number
+                $strTime = strval($time_in_minutes_r); // convert time to a string
                 $full = '<span class="timespan greater-than"><p>';
                 if (get_option('gt1') != '') {
                     $full .= get_option('gt1'); // get the option from WP backend
@@ -110,14 +119,23 @@ function auto_TTR( $content ) {
                     $full .= 'greater than';
                 }
                 $full .= '<span class="ts-time"> ' . $strTime . '</span> '; // add time onto the end of the content
-                if (get_option('gt1po') != '') {
-                    $full .= get_option('gt1po'); // get the option from WP backend
-                    $full .= '</p></span>';
+                if (($time_in_minutes > 1) && ($time_in_minutes < 2) ) {
+                    if (get_option('gt1lt2po') != '') {
+                        $full .= get_option('gt1lt2po'); // get the option from WP backend
+                        $full .= '</p></span>';
+                    } else {                    
+                        $full .= 'minute </p></span>';
+                    }
                 } else {
-                    $full .= 'minutes</p></span>';
+                    if (get_option('gt1po') != '') {
+                        $full .= get_option('gt1po'); // get the option from WP backend
+                        $full .= '</p></span>';
+                    } else {                    
+                        $full .= 'minutes </p></span>';
+                    }
                 }
                 return $full . $content; // return rounded time
-            }
+            } 
         } else {
             return $content;
         }

@@ -71,6 +71,7 @@ We sure are. We're a custom design & WordPress development shop. If WordPress ca
 
 == Changelog ==
 
+= 1.10 = Account for posts which are greater than one minute, and less than two minutes, as per request from @florushj
 = 1.0.2 = Account for prebuilt themes using custom content filters
 = 1.0 = Initial Plugin Launch (September 30, 2014)
 * Plugin First Launches 
